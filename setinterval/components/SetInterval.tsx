@@ -45,6 +45,7 @@ export default function SetInterval() {
   };
 
   useEffect(() => {
+    inputBlurHandler();
     return () => {
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
